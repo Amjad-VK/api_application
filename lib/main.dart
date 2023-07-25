@@ -37,7 +37,7 @@ class _Zedat_homeState extends State<Zedat_home> {
         title: Row(
           children: [
             Icon(
-              Icons.shop_rounded,
+              Icons.kitchen,
               color: Colors.black,
               size: 30,
             ),
@@ -85,7 +85,7 @@ class _Zedat_homeState extends State<Zedat_home> {
                     borderRadius: BorderRadius.circular(8.0),
                     image: DecorationImage(
                       image:
-                          NetworkImage("https://picsum.photos/id/244/200/300"),
+                          NetworkImage("https://i.pinimg.com/564x/0c/ae/79/0cae79de1802fad3bf0a5c4c5da5fc1d.jpg"),
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -161,6 +161,7 @@ class _Zedat_homeState extends State<Zedat_home> {
       ),
       bottomNavigationBar: BottomNavigationBar(
           selectedItemColor: Colors.black,
+          unselectedItemColor: Colors.black,
           selectedIconTheme: IconThemeData(color: Colors.black),
           type: BottomNavigationBarType.fixed,
           elevation: 0,
@@ -168,9 +169,9 @@ class _Zedat_homeState extends State<Zedat_home> {
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
             BottomNavigationBarItem(icon: Icon(Icons.payment), label: 'Offers'),
             BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Rewards'),
-            BottomNavigationBarItem(icon: Icon(Icons.shop), label: 'Cart'),
+            BottomNavigationBarItem(icon: Icon(Icons.account_circle_outlined), label: 'Cart'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.power_off), label: 'Profile'),
+                icon: Icon(Icons.account_circle_rounded), label: 'Profile'),
           ]),
     );
   }
